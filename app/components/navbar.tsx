@@ -6,9 +6,12 @@ const NavBar: React.FC = () => {
   return (
     <div>
       <nav className="w-full bg-black fixed top-0 left-0 right-0 z-10">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        {/* justify-around равонмерное распределение с отступами по краям */}
+        {/* px-10  равонмерное распределение с отступами по краям */}
+        {/* flex  если flex не использовать то блочные элементы (div) будут идти столбиком  */}
+        <div className="flex justify-around items-center">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className=" md:py-5 ">
               {/* Логотип */}
               <Link href="/">
                 <h2 className="text-2xl text-cyan-600 font-bold">
