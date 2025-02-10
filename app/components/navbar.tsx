@@ -5,13 +5,14 @@ import Link from "next/link";
 const NavBar: React.FC = () => {
   return (
     <div>
-      <nav className="w-full bg-black fixed top-0 left-0 right-0 z-10">
+        {/* fixed делает навигационную панель фиксированной относительно скроллингга */}
+      <nav className="bg-black fixed top-0 left-0 right-0 z-10">
         {/* justify-around равонмерное распределение с отступами по краям */}
         {/* px-10  равонмерное распределение с отступами по краям */}
         {/* flex  если flex не использовать то блочные элементы (div) будут идти столбиком  */}
-        <div className="flex justify-around items-center">
+        <div className="flex justify-around py-5">
           <div>
-            <div className=" md:py-5 ">
+            <div className="">
               {/* Логотип */}
               <Link href="/">
                 <h2 className="text-2xl text-cyan-600 font-bold">
