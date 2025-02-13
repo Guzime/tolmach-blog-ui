@@ -1,13 +1,16 @@
 'use client'
-import Image from "next/image";
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
+import { useState } from 'react';
  
-import { useRouter } from 'next/navigation'
 
 // Определяем компонент NavBar
 const NavBar: React.FC = () => {
-  const router = useRouter();
-  console.log("abobus ", router);
+  const pathname = usePathname()
+  const [active, setActive] = useState<string>(pathname)
+  console.log("pathname ", pathname);
+  console.log("active ", active);
+  console.log("setActive ", setActive);
   return (
     <div>
       {/* fixed делает навигационную панель фиксированной относительно скроллингга */}
