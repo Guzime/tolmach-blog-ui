@@ -1,16 +1,21 @@
-'use client'
-import { usePathname } from 'next/navigation'
+"use client";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from 'react';
- 
+import { useState, useEffect } from "react";
 
 // Определяем компонент NavBar
 const NavBar: React.FC = () => {
-  const pathname = usePathname()
-  const [active, setActive] = useState<string>(pathname)
-  console.log("pathname ", pathname);
-  console.log("active ", active);
-  console.log("setActive ", setActive);
+  const pathname = usePathname();
+  //active - позволяет сохранять данные между рендерами setActive позволяет обновить переменную и запустить React для повторной визуализации компонента
+  const [active, setActive] = useState<string>(pathname);
+  //console.log("pathname ", pathname);
+  //console.log("active ", active);
+  //console.log("setActive ", setActive);
+
+  //useEffect 1-ый параметр что будет сделано, при измененении 2-го параметра
+  useEffect(() => {
+    console.log("Эффект сработал!");
+  }, [pathname]);
   return (
     <div>
       {/* fixed делает навигационную панель фиксированной относительно скроллингга */}
@@ -26,19 +31,19 @@ const NavBar: React.FC = () => {
             </Link>
           </div>
           <div className="flex flex-row">
-            <div>
+            <div onClick={() => setActive('/about')}>
               <Link href="/about">
-                <h2 className="text-2xl text-cyan-600 pr-4">[about]</h2>
+                <h2 className={`text-2xl pr-4 ${active === '/about' ? 'text-white' : 'text-cyan-600'}`}>[about]</h2>
               </Link>
             </div>
             <div>
               <Link href="/blog">
-                <h2 className="text-2xl text-cyan-600 pr-4">[blog]</h2>
+              <h2 className={`text-2xl pr-4 ${active === '/blog' ? 'text-white' : 'text-cyan-600'}`}>[blog]</h2>
               </Link>
             </div>
             <div>
               <Link href="/articles">
-                <h2 className="text-2xl text-cyan-600 pr -4">[articles]</h2>
+              <h2 className={`text-2xl pr-4 ${active === '/articles' ? 'text-white' : 'text-cyan-600'}`}>[articles]</h2>
               </Link>
             </div>
           </div>
