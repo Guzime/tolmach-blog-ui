@@ -1,4 +1,5 @@
 "use client";
+//это значит, что можешь использовать хуки и всякое такое реактовское на стороне клиента (браузер)
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect } from "react";
