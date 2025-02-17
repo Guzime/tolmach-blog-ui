@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
   return (
     <div>
       {/* fixed делает навигационную панель фиксированной относительно скроллингга */}
-      <nav className="bg-black fixed top-0 left-0 right-0 z-10">
+      <nav className="bg-[#2C3930] fixed top-0 left-0 right-0 z-10">
         {/* justify-around равонмерное распределение с отступами по краям */}
         {/* px-10  равонмерное распределение с отступами по краям */}
         {/* flex  если flex не использовать то блочные элементы (div) будут идти столбиком  */}
@@ -28,23 +28,23 @@ const NavBar: React.FC = () => {
           <div>
             {/* Логотип */}
             <Link href="/">
-              <h2 className="text-2xl text-cyan-600">[tolmach-blog]</h2>
+              <h2 className="text-2xl text-[#A27B5C]">[tolmach-blog]</h2>
             </Link>
           </div>
           <div className="flex flex-row">
             <div onClick={() => setActive('/about')}>
               <Link href="/about">
-                <h2 className={`text-2xl pr-4 ${active === '/about' ? 'text-white' : 'text-cyan-600'}`}>[about]</h2>
+                <h2 className={`text-2xl pr-4 ${active === '/about' ? 'text-[#DCD7C9]' : 'text-[#A27B5C]'}`}>[about]</h2>
               </Link>
             </div>
             <div>
               <Link href="/blog">
-              <h2 className={`text-2xl pr-4 ${active === '/blog' ? 'text-white' : 'text-cyan-600'}`}>[blog]</h2>
+              <h2 className={`text-2xl pr-4 ${active === '/blog' ? 'text-[#DCD7C9]' : 'text-[#A27B5C]'}`}>[blog]</h2>
               </Link>
             </div>
             <div>
               <Link href="/articles">
-              <h2 className={`text-2xl pr-4 ${active === '/articles' ? 'text-white' : 'text-cyan-600'}`}>[articles]</h2>
+              <h2 className={`text-2xl pr-4 ${active === '/articles' ? 'text-[#DCD7C9]' : 'text-[#A27B5C]'}`}>[articles]</h2>
               </Link>
             </div>
           </div>
