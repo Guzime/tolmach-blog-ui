@@ -6,7 +6,7 @@ console.log("ЭЭЭЭ бля");
 const AboutMe: React.FC = () => {
   return (
     <div className="flex justify-center items-center mt-20">
-      <div className="bg-[#3F4F44] p-8 rounded-xl shadow-md shadow-[#3F4F44] flex flex-col items-center ">
+      <div className="bg-white p-8 rounded-xl  border border-[#F0F0F0] flex flex-col items-center ">
         <Image
           src="https://avatars.githubusercontent.com/u/40675616?v=4"
           alt="Картинка прикола"
@@ -14,7 +14,7 @@ const AboutMe: React.FC = () => {
           height={300}
           className="rounded-xl mb-4 "
         />
-        <h1 className="text-white"> ну это прикол тут будет </h1>
+        <h1 className="text-black"> ну это прикол тут будет </h1>
       </div>
     </div>
   );
