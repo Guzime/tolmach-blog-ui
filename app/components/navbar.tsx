@@ -20,7 +20,7 @@ const NavBar: React.FC = () => {
   return (
     <div>
       {/* fixed делает навигационную панель фиксированной относительно скроллингга */}
-      <nav className="bg-white border border-solid border-[#F0F0F0] fixed top-0 left-0 right-0 z-10">
+      <nav className="bg-white border border-solid border-customBorder fixed top-0 left-0 right-0 z-10">
         {/* justify-around равонмерное распределение с отступами по краям */}
         {/* px-10  равонмерное распределение с отступами по краям */}
         {/* flex  если flex не использовать то блочные элементы (div) будут идти столбиком  */}
@@ -28,23 +28,23 @@ const NavBar: React.FC = () => {
           <div>
             {/* Логотип */}
             <Link href="/">
-              <h2 className="text-2xl text-black">[tolmach-blog]</h2>
+              <h2 className="text-2xl text-black font-sans">Tolmachev</h2>
             </Link>
           </div>
           <div className="flex flex-row">
             <div onClick={() => setActive('/about')}>
               <Link href="/about">
-                <h2 className={`text-2xl pr-4 ${active === '/about' ? 'text-[#DCD7C9]' : 'text-black'}`}>[about]</h2>
+                <h2 className={`text-2xl pr-4 font-sans ${active === '/about' ? 'text-[#DCD7C9]' : 'text-black'}`}>About</h2>
               </Link>
             </div>
             <div>
               <Link href="/blog">
-              <h2 className={`text-2xl pr-4 ${active === '/blog' ? 'text-[#DCD7C9]' : 'text-black'}`}>[blog]</h2>
+              <h2 className={`text-2xl pr-4 font-sans ${active === '/blog' ? 'text-[#DCD7C9]' : 'text-black'}`}>Articles</h2>
               </Link>
             </div>
             <div>
               <Link href="/articles">
-              <h2 className={`text-2xl pr-4 ${active === '/articles' ? 'text-[#DCD7C9]' : 'text-black'}`}>[articles]</h2>
+              <h2 className={`text-2xl pr-4 font-sans ${active === '/articles' ? 'text-[#DCD7C9] ' : 'text-black'}`}>Blog</h2>
               </Link>
             </div>
           </div>

@@ -6,7 +6,7 @@ console.log("ЭЭЭЭ бля");
 const AboutMe: React.FC = () => {
   return (
     <div className="flex justify-center items-center mt-20">
-      <div className="bg-white p-8 rounded-xl  border border-[#F0F0F0] flex flex-col items-center ">
+      <div className="bg-white p-8 rounded-xl  border border-customBorder flex flex-col items-center ">
         <Image
           src="https://avatars.githubusercontent.com/u/40675616?v=4"
           alt="Картинка прикола"
