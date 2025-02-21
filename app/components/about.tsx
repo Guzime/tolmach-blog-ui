@@ -14,7 +14,7 @@ const AboutMe: React.FC = () => {
           height={300}
           className="rounded-xl mb-4 "
         />
-        <h1 className="text-lg text-black font-sans "> My Stack: </h1>
+        <h1 className="text-lg text-black font-sans "> My Stack </h1>
       </div>
     </div>
   );
