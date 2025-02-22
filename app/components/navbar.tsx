@@ -47,6 +47,11 @@ const NavBar: React.FC = () => {
               <h2 className={`text-2xl pr-4 font-sans ${active === '/articles' ? 'text-[#DCD7C9] ' : 'text-black'}`}>Blog</h2>
               </Link>
             </div>
+            <div>
+              <Link href="/knowledge">
+              <h2 className={`text-2xl pr-4 font-sans ${active === '/knowledge' ? 'text-[#DCD7C9] ' : 'text-black'}`}>Knowledge base</h2>
+              </Link>
+            </div>
           </div>
           {/* Контейнер меню */}
         </div>

@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 
 console.log("ЭЭЭЭ бля");
@@ -10,9 +9,9 @@ const AboutMe: React.FC = () => {
         <Image
           src="https://avatars.githubusercontent.com/u/40675616?v=4"
           alt="Картинка прикола"
-          width={500}
-          height={300}
-          className="rounded-xl mb-4 "
+          width={200}
+          height={200}
+          className="rounded-full mb-4 "
         />
         <h1 className="text-lg text-black font-sans "> My Stack </h1>
       </div>
