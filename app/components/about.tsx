@@ -13,7 +13,12 @@ const AboutMe: React.FC = () => {
           height={200}
           className="rounded-full mb-4 "
         />
-        <h1 className="text-lg text-black font-sans "> My Stack </h1>
+        <h1 className="text-lg text-black font-sans"> Tolmachev Nikita </h1>
+        <div className="flex">
+        <img src="location.svg" alt="icon" />
+        <p className="font-sans text-[#9198A1]">Russia, Moscow</p>
+        </div>
+        
       </div>
     </div>
   );
