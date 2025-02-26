@@ -10,8 +10,8 @@ export default function Home() {
       <div className="flex justify-center gap-6">
         <AboutMe />
         <StackMe />
-        <ExperienceMe />
       </div>
+      <ExperienceMe />
     </div>
   );
 }
