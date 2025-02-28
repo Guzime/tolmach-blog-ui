@@ -4,13 +4,23 @@ const ExperienceMe: React.FC = () => {
       <div className="bg-white p-8 rounded-xl  border border-customBorder flex flex-col items-center w-[800]">
         <h1 className="text-lg font-sans text-black">Experience</h1>
         <div className="flex justify-center gap-6">
-          <div className="flex gap-1 flex-row p-0.5">
-            <img
-              src="calendar.svg"
-              alt="icon"
-              className="w-5 h-5 object-contain"
-            />
-            <p className="font-sans text-[#9198A1] w-[110]">2021-2024</p>
+          <div>
+            <div className="flex gap-1 flex-row p-0.5">
+              <img
+                src="calendar.svg"
+                alt="icon"
+                className="w-5 h-5 object-contain"
+              />
+              <p className="font-sans text-[#9198A1] w-[130]">2021-2024</p>
+            </div>
+            <div className="flex gap-1 flex-row p-0.5">
+              <img
+                src="work.svg"
+                alt="icon"
+                className="w-5 h-5 object-contain"
+              />
+              <p className="font-sans text-[#9198A1] w-[110]">Digital League</p>
+            </div>
           </div>
           <div>
             <h1 className="text-lg font-sans text-black">
@@ -29,14 +39,24 @@ const ExperienceMe: React.FC = () => {
           </div>
         </div>
         <div className="flex justify-center gap-6 mt-6">
+            <div>
           <div className="flex gap-1 flex-row p-0.5">
             <img
               src="calendar.svg"
               alt="icon"
               className="w-5 h-5 object-contain"
             />
-            <p className="font-sans text-[#9198A1] w-[110]">2021-2024</p>
+            <p className="font-sans text-[#9198A1] w-[130]">2021-2024</p>
           </div>
+          <div className="flex gap-1 flex-row p-0.5">
+              <img
+                src="work.svg"
+                alt="icon"
+                className="w-5 h-5 object-contain"
+              />
+              <p className="font-sans text-[#9198A1] w-[110]">Digital League</p>
+            </div>
+            </div>
           <div>
             <h1 className="text-lg font-sans text-black">Developer</h1>
             <p className="font-sans text-[#9198A1]">
