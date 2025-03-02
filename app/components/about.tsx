@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Contact from "./contact";
 
 const AboutMe: React.FC = () => {
   return (
+    <div>
     <div className="flex justify-center items-center mt-20">
       <div className="bg-white p-8 rounded-xl  border border-customBorder flex flex-col items-center ">
         <Image
@@ -14,7 +16,9 @@ const AboutMe: React.FC = () => {
         <div className="flex flex-col items-start">
           <h1 className="text-lg text-black font-sans"> Tolmachev Nikita</h1>
           <div className="flex gap-1">
-            <img
+            <Image
+              width={5}
+              height={5}
               src="badge.svg"
               alt="icon"
               className="w-5 h-5 object-contain"
@@ -22,7 +26,9 @@ const AboutMe: React.FC = () => {
             <p className="font-sans text-[#9198A1]">Java Developer</p>
           </div>
           <div className="flex gap-1">
-            <img
+            <Image
+              width={5}
+              height={5}
               src="location.svg"
               alt="icon"
               className="w-5 h-5 object-contain"
@@ -30,11 +36,18 @@ const AboutMe: React.FC = () => {
             <p className="font-sans  text-[#9198A1]">Russia, Moscow</p>
           </div>
           <div className="flex gap-1">
-            <img src="work.svg" alt="icon" className="w-5 h-5 object-contain" />
+            <Image
+              width={5}
+              height={5} 
+              src="work.svg" 
+              alt="icon" 
+              className="w-5 h-5 object-contain" />
             <p className="font-sans text-[#9198A1]">Diasoft</p>
           </div>
         </div>
       </div>
+    </div>
+      <Contact/>
     </div>
   );
 };
