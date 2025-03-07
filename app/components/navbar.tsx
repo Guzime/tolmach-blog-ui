@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-// Определяем компонент NavBar
 const NavBar: React.FC = () => {
   const pathname = usePathname();
   //active - позволяет сохранять данные между рендерами setActive позволяет обновить переменную и запустить React для повторной визуализации компонента
