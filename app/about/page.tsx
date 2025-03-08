@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-3">
         <AboutMe />
         <StackMe />
       </div>

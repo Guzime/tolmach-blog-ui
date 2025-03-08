@@ -3,14 +3,14 @@ import Contact from "./contact";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="w-[280]">
-      <div className="flex justify-center items-center mt-20">
-        <div className="bg-white p-8 rounded-xl  border border-customBorder flex flex-col items-center w-full h-[400]">
+    <div className="">
+      <div className="flex justify-center items-center mt-[70px]">
+        <div className="p-4 bg-white rounded-xl  border border-customBorder flex flex-col items-center w-full">
           <Image
             src="https://avatars.githubusercontent.com/u/40675616?v=4"
             alt="Картинка прикола"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className="rounded-full mb-4 "
           />
           <div className="flex flex-col items-start">

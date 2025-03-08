@@ -1,6 +1,6 @@
 const StackMe: React.FC = () => {
   return (
-    <div className="flex justify-center mt-20">
+    <div className="flex justify-center mt-[70px]">
       <div className="bg-white p-8 rounded-xl  border border-customBorder flex flex-col items-center w-[400] h-[400]">
         <h1 className="text-lg font-sans text-black">Skills & Tools</h1>
         <ul className="list-disc font-sans text-[#9198A1]">
