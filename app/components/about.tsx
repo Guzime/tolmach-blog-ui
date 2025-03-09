@@ -11,10 +11,10 @@ const AboutMe: React.FC = () => {
             alt="Картинка прикола"
             width={300}
             height={300}
-            className="rounded-full mb-4 "
+            className="rounded-full mb-4 border-2 border-customBorder"
           />
           <div className="flex flex-col items-start">
-            <h1 className="text-lg text-black font-sans"> Tolmachev Nikita</h1>
+            <h1 className="text-xl text-black font-sans font-medium"> Tolmachev Nikita</h1>
             <div className="flex gap-1">
               <Image
                 width={5}
@@ -23,7 +23,7 @@ const AboutMe: React.FC = () => {
                 alt="icon"
                 className="w-5 h-5 object-contain"
               />
-              <p className="font-sans text-[#9198A1]">Java Developer</p>
+              <p className="font-sans font-light text-[#9198A1]">Java Developer</p>
             </div>
             <div className="flex gap-1">
               <Image
@@ -33,7 +33,7 @@ const AboutMe: React.FC = () => {
                 alt="icon"
                 className="w-5 h-5 object-contain"
               />
-              <p className="font-sans  text-[#9198A1]">Russia, Moscow</p>
+              <p className="font-sans font-light text-[#9198A1]">Russia, Moscow</p>
             </div>
             <div className="flex gap-1">
               <Image
@@ -43,7 +43,7 @@ const AboutMe: React.FC = () => {
                 alt="icon"
                 className="w-5 h-5 object-contain"
               />
-              <p className="font-sans text-[#9198A1]">Diasoft</p>
+              <p className="font-sans font-light text-[#9198A1]">Diasoft</p>
             </div>
           </div>
         </div>

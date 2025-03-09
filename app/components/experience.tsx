@@ -2,9 +2,9 @@ import ExperienceItem from "./experince_item";
 
 const ExperienceMe: React.FC = () => {
   return (
-    <div className="flex justify-center mt-6">
+    <div className="flex justify-center mt-3">
       <div className="bg-white p-8 rounded-xl  border border-customBorder flex flex-col items-center w-[800]">
-        <h1 className="text-lg font-sans text-black">Experience</h1>
+        <h1 className="text-xl font-medium font-sans text-black">Experience</h1>
         <ExperienceItem
           year="2024-2025"
           company="Diasfot"
