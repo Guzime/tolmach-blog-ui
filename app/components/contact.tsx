@@ -13,7 +13,7 @@ const Contact: React.FC = () => {
               alt="icon"
               className="w-5 h-5 object-contain mt-0.5"
             />
-            <p className="font-sans font-light text-[#9198A1]">Mail</p>
+            <a href="mailto:forblachok@yandex.ru" className="font-sans font-light text-[#9198A1] hover:opacity-60 transform transition duration-200">Mail</a>
           </div>
           <div className="flex gap-1">
             <Image
@@ -23,7 +23,11 @@ const Contact: React.FC = () => {
               alt="icon"
               className="w-5 h-5 object-contain mt-0.5"
             />
-            <p className="font-sans font-light text-[#9198A1]">Telegram</p>
+            <a 
+            href="https://t.me/tolmachevski" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="font-sans font-light text-[#9198A1] hover:opacity-60 transform transition duration-200">Telegram</a>
           </div>
           <div className="flex gap-1">
             <Image
@@ -33,7 +37,11 @@ const Contact: React.FC = () => {
               alt="icon"
               className="w-5 h-5 object-contain mt-0.5"
             />
-            <p className="font-sans font-light text-[#9198A1]">GitHub</p>
+             <a 
+            href="https://github.com/Guzime" 
+            target="_blank"
+            rel="noopener noreferrer" 
+            className="font-sans font-light text-[#9198A1] hover:opacity-60 transform transition duration-200">Github</a>
           </div>
         </div>
       </div>
