@@ -8,9 +8,6 @@ const NavBar: React.FC = () => {
   const pathname = usePathname();
   //active - позволяет сохранять данные между рендерами setActive позволяет обновить переменную и запустить React для повторной визуализации компонента
   const [active, setActive] = useState<string>(pathname);
-  //console.log("pathname ", pathname);
-  //console.log("active ", active);
-  //console.log("setActive ", setActive);
 
   //useEffect 1-ый параметр что будет сделано, при измененении 2-го параметра
   useEffect(() => {
