@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import ButtonLogin from "./button_login";
 
 const NavBar: React.FC = () => {
   const pathname = usePathname();
@@ -49,9 +50,7 @@ const NavBar: React.FC = () => {
               </Link>
             </div>
           </div>
-          <button className="px-6 py-2 bg-blue-600 text-white font-sans rounded-lg shadow-md hover:opacity-80 transform transition duration-200 focus:outline-none focus:ring-2 focus:opacity-80">
-            Log In
-          </button>
+          <ButtonLogin/>
         </div>
       </nav>
     </div>
