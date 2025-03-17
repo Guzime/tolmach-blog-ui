@@ -4,8 +4,12 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import ButtonLogin from "./button_login";
+import { SessionProvider } from "next-auth/react";
+import type { AppProps } from "next/app";
 
-const NavBar: React.FC = () => {
+
+
+const NavBar: React.FC = ({pageProps }: AppProps) => {
   const pathname = usePathname();
   //active - позволяет сохранять данные между рендерами setActive позволяет обновить переменную и запустить React для повторной визуализации компонента
   const [active, setActive] = useState<string>(pathname);
@@ -50,7 +54,10 @@ const NavBar: React.FC = () => {
               </Link>
             </div>
           </div>
-          <ButtonLogin/>
+          <SessionProvider session={pageProps?.session}>     
+              <ButtonLogin {...pageProps} />
+          </SessionProvider>
+        
         </div>
       </nav>
     </div>
